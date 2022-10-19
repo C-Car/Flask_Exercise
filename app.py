@@ -1,4 +1,5 @@
 from datetime import date
+from datetime import datetime
 from urllib import request
 from flask import Flask, render_template, request
 import datetime
@@ -10,7 +11,7 @@ global studentOrganisationDetails
 
 @app.get('/')
 def index():
-    # Complete this function to get current date and time assign this value to currentDate, display this data on index.html
+    currentDate = datetime.datetime.now()
 
     return render_template('index.html', currentDate=currentDate)
 
