@@ -2,5 +2,18 @@
 <h1>Register</h1>
 <h4>Enter Student Information below</h4>
 <!--Form to request user's name-->
-
+<div class="col-2">
+    <form action = "addStudentOrganisation" method="POST">
+        <label for="name">Enter Your Name: </label>
+        <input type="text" id="name" name="name" placeholder="Joe Smith">
+        <label for="organisation">Enter organisation:</label>
+        <select id="Organisation" name="Organisation">
+            <option value="Baseball">Baseball</option>
+            <option value="Football">Football</option>
+            <option value="Soccer">Soccer</option>
+            <option value="Basketball">Basketball</option>
+            <option value="Tennis">Tennis</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
 {% endblock %}
